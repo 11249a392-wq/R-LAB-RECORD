@@ -1,0 +1,289 @@
+Question 1: College Student Record System
+students <- data.frame(
+  RollNo = c(201, 202, 203),
+  Name = c("Asha", "Vikram", "Neeraj"),
+  Dept = c("MECH", "CIVIL", "EEE")
+)
+marks <- data.frame(
+  Marks = c(67, 74, 81)
+)
+student_data <- cbind(students, marks)
+student_data
+new_students <- data.frame(
+  RollNo = 204,
+  Name = "Pooja",
+  Dept = "MECH",
+  Marks = 79
+)
+final_data <- rbind(student_data, new_students)
+final_data
+
+Question 2: Employee Management System
+employee_details <- data.frame(
+  EmpID = c(11, 12, 13),
+  Name = c("Kunal", "Ritika", "Dev"),
+  Dept = c("Admin", "Support", "IT")
+)
+salary_details <- data.frame(
+  Salary = c(28000, 32000, 41000)
+)
+employees <- cbind(employee_details, salary_details)
+employees
+new_employee <- data.frame(
+  EmpID = 14,
+  Name = "Farhan",
+  Dept = "HR",
+  Salary = 36000
+)
+employees <- rbind(employees, new_employee)
+employees
+
+Question 3: Hospital Patient Records
+patient_info <- data.frame(
+  PatientID = c(301, 302),
+  Name = c("Mohan", "Geeta"),
+  Age = c(60, 29)
+)
+treatment_cost <- data.frame(
+  Cost = c(22000, 9000)
+)
+patient_records <- cbind(patient_info, treatment_cost)
+patient_records
+new_patient <- data.frame(
+  PatientID = 303,
+  Name = "Ramesh",
+  Age = 47,
+  Cost = 16000
+)
+patient_records <- rbind(patient_records, new_patient)
+patient_records
+
+Question 4: Product Inventory System
+products <- data.frame(
+  ProductID = c(10, 20, 30),
+  ProductName = c("Notebook", "Marker", "Folder")
+)
+stock <- data.frame(
+  Quantity = c(200, 120, 75)
+)
+inventory <- cbind(products, stock)
+inventory
+new_product <- data.frame(
+  ProductID = 40,
+  ProductName = "Stapler",
+  Quantity = 50
+)
+inventory <- rbind(inventory, new_product)
+inventory
+
+Question 5: University Academic Management System
+students <- data.frame(
+  RollNo = c(11, 12, 13),
+  Name = c("Irfan", "Kavya", "Rohit"),
+  Dept = c("BIO", "CHEM", "PHY")
+)
+marks <- data.frame(
+  Sem1 = c(65, 72, 88),
+  Sem2 = c(70, 75, 90)
+)
+attendance <- data.frame(
+  Attendance = c(85, 80, 92)
+)
+student_records <- cbind(students, marks, attendance)
+student_records
+new_students <- data.frame(
+  RollNo = c(14, 15),
+  Name = c("Leena", "Manoj"),
+  Dept = c("BIO", "PHY"),
+  Sem1 = c(78, 83),
+  Sem2 = c(82, 86),
+  Attendance = c(88, 91)
+)
+final_records <- rbind(student_records, new_students)
+final_records
+
+Question 6: Corporate Employee Payroll System
+emp_details <- data.frame(
+  EmpID = c(201, 202),
+  Name = c("Sanjay", "Priya"),
+  Dept = c("Sales", "IT")
+)
+salary <- data.frame(
+  Basic = c(27000, 38000),
+  HRA = c(5400, 7600),
+  DA = c(2700, 3800)
+)
+rating <- data.frame(
+  Rating = c(3.9, 4.6)
+)
+payroll <- cbind(emp_details, salary, rating)
+payroll
+new_emp <- data.frame(
+  EmpID = 203,
+  Name = "Varun",
+  Dept = "Marketing",
+  Basic = 35000,
+  HRA = 7000,
+  DA = 3500,
+  Rating = 4.3
+)
+payroll <- rbind(payroll, new_emp)
+payroll
+
+Question 7: Hospital Information System
+patients <- data.frame(
+  PatientID = c(401, 402),
+  Name = c("Nisha", "Ajay"),
+  Age = c(33, 58)
+)
+diagnosis <- data.frame(
+  Disease = c("Asthma", "Arthritis")
+)
+billing <- data.frame(
+  Amount = c(8000, 14000)
+)
+hospital_data <- cbind(patients, diagnosis, billing)
+hospital_data
+new_patient <- data.frame(
+  PatientID = 403,
+  Name = "Kiran",
+  Age = 46,
+  Disease = "Migraine",
+  Amount = 6000
+)
+hospital_data <- rbind(hospital_data, new_patient)
+hospital_data
+
+Question 8: Retail Sales Analytics System
+products <- data.frame(
+  ProductID = c(5, 6, 7),
+  ProductName = c("TV", "Refrigerator", "AC")
+)
+sales_qty <- data.frame(
+  UnitsSold = c(45, 30, 25)
+)
+revenue <- data.frame(
+  Revenue = c(900000, 750000, 650000)
+)
+sales_data <- cbind(products, sales_qty, revenue)
+sales_data
+new_product <- data.frame(
+  ProductID = 8,
+  ProductName = "Washing Machine",
+  UnitsSold = 20,
+  Revenue = 400000
+)
+sales_data <- rbind(sales_data, new_product)
+sales_data
+
+Question 9: Smart Agriculture Monitoring System
+field_info <- data.frame(
+  FieldID = c(10, 20),
+  Crop = c("Cotton", "Sugarcane")
+)
+sensor_data <- data.frame(
+  Moisture = c(50, 42),
+  Temp = c(34, 30)
+)
+yield <- data.frame(
+  ExpectedYield = c(3.5, 5.2)
+)
+agri_data <- cbind(field_info, sensor_data, yield)
+agri_data
+new_field <- data.frame(
+  FieldID = 30,
+  Crop = "Soybean",
+  Moisture = 48,
+  Temp = 33,
+  ExpectedYield = 4.0
+)
+agri_data <- rbind(agri_data, new_field)
+agri_data
+Question 10: merge() – University System
+students <- data.frame(
+  RollNo = c(21, 22, 23),
+  Name = c("Tejas", "Nikita", "Harish"),
+  Dept = c("Maths", "Stats", "CS")
+)
+marks <- data.frame(
+  RollNo = c(21, 22, 23),
+  Sem1 = c(55, 68, 77),
+  Sem2 = c(60, 70, 80)
+)
+attendance <- data.frame(
+  RollNo = c(21, 22, 23),
+  Attendance = c(78, 82, 88)
+)
+student_data <- merge(students, marks, by = "RollNo")
+final_records <- merge(student_data, attendance, by = "RollNo")
+final_records
+Question 11: merge() – Payroll System
+emp_details <- data.frame(
+  EmpID = c(301, 302, 303),
+  Name = c("Anil", "Bhavna", "Chetan"),
+  Dept = c("IT", "HR", "Sales")
+)
+salary <- data.frame(
+  EmpID = c(301, 302),
+  Basic = c(25000, 30000),
+  HRA = c(5000, 6000),
+  DA = c(2500, 3000)
+)
+rating <- data.frame(
+  EmpID = c(301, 303),
+  Rating = c(4.1, 4.7)
+)
+payroll <- merge(emp_details, salary, by = "EmpID", all.x = TRUE)
+payroll <- merge(payroll, rating, by = "EmpID", all.x = TRUE)
+payroll
+Question 12: merge() – Hospital System
+patients <- data.frame(
+  PatientID = c(501, 502, 503),
+  Name = c("Deepak", "Shalini", "Omkar"),
+  Age = c(40, 35, 62)
+)
+diagnosis <- data.frame(
+  PatientID = c(501, 503),
+  Disease = c("Flu", "Cancer")
+)
+billing <- data.frame(
+  PatientID = c(501, 502, 503),
+  Amount = c(5000, 7000, 20000)
+)
+hospital_data <- merge(patients, diagnosis, by = "PatientID", all.x = TRUE)
+hospital_data <- merge(hospital_data, billing, by = "PatientID")
+hospital_data
+Question 13: merge() – Retail Sales
+products <- data.frame(
+  ProductID = c(11, 12, 13, 14),
+  ProductName = c("Fan", "Cooler", "Heater", "Geyser")
+)
+sales_qty <- data.frame(
+  ProductID = c(11, 12, 13),
+  UnitsSold = c(60, 40, 30)
+)
+revenue <- data.frame(
+  ProductID = c(11, 13, 14),
+  Revenue = c(300000, 200000, 150000)
+)
+sales_data <- merge(products, sales_qty, by = "ProductID", all = TRUE)
+sales_data <- merge(sales_data, revenue, by = "ProductID", all = TRUE)
+sales_data
+
+Question 14: merge() – Agriculture System
+field_info <- data.frame(
+  FieldID = c(101, 102, 103),
+  Crop = c("Barley", "Millet", "Pulses")
+)
+sensor_data <- data.frame(
+  FieldID = c(101, 102),
+  Moisture = c(35, 42),
+  Temp = c(28, 31)
+)
+yield <- data.frame(
+  FieldID = c(101, 103),
+  ExpectedYield = c(2.8, 3.6)
+)
+agri_data <- merge(field_info, sensor_data, by = "FieldID", all.x = TRUE)
+agri_data <- merge(agri_data, yield, by = "FieldID", all.x = TRUE)
+agri_data
