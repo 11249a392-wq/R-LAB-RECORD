@@ -1,0 +1,54 @@
+Question 1: Employee Name Standardization
+names <- c("kiran", "SOMA", "rajesh")
+upper_names <- toupper(names)
+name_length <- nchar(upper_names)
+upper_names
+name_length
+
+Question 2: Student Email Processing
+emails <- c("deepa@edu.in", "varun@college.org", "latha@uni.net")
+usernames <- sub("@.*", "", emails)
+usernames
+
+Question 3: Online Form Input Cleanup
+input <- c(" Machine Learning ", " Cloud Computing ", " Big Data ")
+clean_input <- trimws(input)
+clean_input
+
+Question 4: Product Code Validation
+product_codes <- c("PRD555", "XYZ111", "PRD999")
+valid_codes <- startsWith(product_codes, "PRD")
+valid_codes
+
+Question 5: Text Replacement in Reports
+report <- "error found in module, critical error detected"
+updated_report <- gsub("error", "issue", report)
+updated_report
+
+Question 6: Password Strength Checker
+password <- "abc45"
+if(nchar(password) >= 8){
+  print("Strong Password")
+} else {
+  print("Weak Password")
+}
+
+Question 7: Sentence Word Count
+sentence <- "Data science includes statistics and programming"
+word_count <- length(strsplit(sentence, " ")[[1]])
+word_count
+
+Question 8: File Extension Extraction
+files <- c("notes.txt", "presentation.pptx", "script.R")
+extensions <- sub(".*\\.", "", files)
+extensions
+
+Question 9: Student Name Abbreviation
+names <- c("Praveen", "Lakshman", "Divakar")
+abbr <- substr(names, 1, 3)
+abbr
+
+Question 10: Search Operation in Text
+names <- c("Kiran", "Suresh", "Mohan", "Vijay")
+matched_names <- grep("a", names, value = TRUE)
+matched_names
