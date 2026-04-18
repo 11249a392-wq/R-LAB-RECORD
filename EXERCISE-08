@@ -1,0 +1,105 @@
+Question 1: University Course Enrollment (Updated Data)
+# Data
+departments <- c("Civil", "AI", "Biotech", "Chemical")
+students <- c(95, 140, 70, 55)
+# Pie Chart
+pie(
+  students,
+  labels = departments,
+  main = "Enrollment Distribution",
+  col = c("lightblue", "lightcoral", "lightgreen", "lightyellow")
+)
+# Bar Chart
+barplot(
+  students,
+  names.arg = departments,
+  main = "Students per Department",
+  xlab = "Department",
+  ylab = "Students Count",
+  col = c("lightblue", "lightcoral", "lightgreen", "lightyellow")
+)
+
+Question 2: Retail Store Sales Distribution (Updated Data)
+# Data
+category <- c("Groceries", "Furniture", "Toys", "Footwear")
+sales <- c(90000, 120000, 45000, 60000)
+
+# Pie Chart
+pie(
+  sales,
+  labels = category,
+  main = "Sales Distribution",
+  col = rainbow(length(category))
+)
+# Bar Chart
+barplot(
+  sales,
+  names.arg = category,
+  main = "Sales by Category",
+  xlab = "Category",
+  ylab = "Sales (₹)",
+  col = rainbow(length(category))
+)
+
+Question 3: Online Exam Result Analysis (Updated Data)
+# Data
+grades <- c("A+", "A", "B", "C", "Fail")
+count <- c(10, 20, 35, 25, 10)
+# Pie Chart
+pie(
+  count,
+  labels = grades,
+  main = "Exam Grade Distribution",
+  col = c("purple", "gold", "skyblue", "orange", "red")
+)
+# Bar Chart
+barplot(
+  count,
+  names.arg = grades,
+  main = "Students per Grade",
+  xlab = "Grade",
+  ylab = "Number of Students",
+  col = c("purple", "gold", "skyblue", "orange", "red")
+)
+
+Question 4: Company Employee Experience Levels (Updated Data)
+# Data
+experience <- c("1-3 yrs", "4-6 yrs", "7-12 yrs", "12+ yrs")
+employees <- c(65, 95, 55, 25)
+# Pie Chart
+pie(
+  employees,
+  labels = experience,
+  main = "Experience Distribution",
+  col = c("cyan", "magenta", "yellow", "gray")
+)
+# Bar Chart
+barplot(
+  employees,
+  names.arg = experience,
+  main = "Employees by Experience",
+  xlab = "Experience",
+  ylab = "Employee Count",
+  col = c("cyan", "magenta", "yellow", "gray")
+)
+
+Question 5: Agricultural Crop Production (Updated Data)
+# Data
+crop <- c("Sugarcane", "Cotton", "Barley", "Pulses")
+production <- c(180, 130, 90, 60)
+# Pie Chart
+pie(
+  production,
+  labels = crop,
+  main = "Crop Yield Distribution",
+  col = c("lightpink", "lightgreen", "lightblue", "lightgray")
+)
+# Bar Chart
+barplot(
+  production,
+  names.arg = crop,
+  main = "Crop Production",
+  xlab = "Crop Type",
+  ylab = "Production (Tonnes)",
+  col = c("lightpink", "lightgreen", "lightblue", "lightgray")
+)
