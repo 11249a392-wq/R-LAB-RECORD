@@ -1,0 +1,111 @@
+Question 1: Student Marks Processing (Vectors)
+marks <- c(65, 72, 88, 91, 79)
+total <- sum(marks)
+average <- mean(marks)
+highest <- max(marks)
+total
+average
+highest
+
+Question 2: Temperature Monitoring System (Vectors)
+temperature <- c(29, 30, 28, 31, 33, 32, 30)
+min_temp <- min(temperature)
+max_temp <- max(temperature)
+min_temp
+max_temp
+
+Question 3: Employee Profile Storage (Lists)
+employee <- list(
+  ID = 205,
+  Name = "Rohini",
+  Salary = 52000,
+  Department = "Finance"
+)
+employee
+employee$Name
+employee$Salary
+
+Question 4: Patient Medical Record System (Lists)
+patient <- list(
+  PatientID = 310,
+  Name = "Mahesh",
+  Age = 52,
+  TestResults = c(135, 128, 142)
+)
+patient
+patient$TestResults
+
+Question 5: College Student Database (Data Frames)
+students <- data.frame(
+  RollNo = c(11, 12, 13),
+  Name = c("Pavithra", "Dinesh", "Sanjana"),
+  Dept = c("EEE", "MECH", "CIVIL"),
+  Marks = c(74, 81, 69)
+)
+students
+
+Question 6: Sales Report System (Data Frames)
+sales <- data.frame(
+  Month = c("Apr", "May", "Jun"),
+  Sales = c(72000, 68000, 75000)
+)
+total_sales <- sum(sales$Sales)
+total_sales
+
+Question 7: E-Commerce Order System
+prices <- c(1500, 2300, 999)
+customer <- list(
+  CustomerID = 402,
+  Name = "Naveen",
+  City = "Hyderabad"
+)
+orders <- data.frame(
+  Item = c("Tablet", "Speaker", "Mouse"),
+  Price = prices
+)
+prices
+customer
+orders
+
+Question 8: Online Exam System
+subject_marks <- c(67, 73, 80)
+student_profile <- list(
+  Name = "Keerthi",
+  RollNo = 210,
+  Marks = subject_marks
+)
+class_results <- data.frame(
+  RollNo = c(201, 202, 203),
+  Total = c(210, 225, 240)
+)
+student_profile
+class_results
+
+Question 9: Bank Account Management
+balances <- c(8200, 7900, 8100)
+customer <- list(
+  AccountNo = 67890,
+  Name = "Vinod"
+)
+transactions <- data.frame(
+  Date = c("05-02", "06-02", "07-02"),
+  Amount = c(-700, 1500, -300)
+)
+balances
+customer
+transactions
+
+Question 10: Real-World Summary Question
+scores <- c(72, 85, 78)
+profile <- list(
+  Name = "Shreya",
+  Age = 22,
+  Scores = scores
+)
+records <- data.frame(
+  Subject = c("English", "Biology", "Chemistry"),
+  Marks = scores
+)
+scores
+profile
+records
