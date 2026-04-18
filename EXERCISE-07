@@ -1,0 +1,58 @@
+Updated CSV Data (sales_data.csv)
+Date,Product,Category,Quantity,Price
+2026-02-01,Tablet,Electronics,4,30000
+2026-02-01,Shoes,Fashion,6,2500
+2026-02-02,Camera,Electronics,2,45000
+2026-02-02,Watch,Accessories,8,2000
+2026-02-03,Shoes,Fashion,3,2500
+2026-02-03,Tablet,Electronics,5,30000
+
+Step 1: Load the CSV File
+sales <- read.csv("sales_data.csv")
+head(sales)
+str(sales)
+summary(sales)
+
+Step 2: Data Cleaning
+sales$Product <- trimws(sales$Product)
+sales$Category <- trimws(sales$Category)
+sales$Date <- as.Date(sales$Date, format="%Y-%m-%d")
+sales$TotalSales <- sales$Quantity * sales$Price
+head(sales)
+
+Step 3: Total Sales per Product
+total_sales_product <- aggregate(TotalSales ~ Product, data = sales, sum)
+total_sales_product
+Sample Output
+Product   TotalSales
+Tablet    270000
+Camera     90000
+Shoes      22500
+Watch      16000
+
+Step 4: Top-Selling Product
+top_product <- total_sales_product[which.max(total_sales_product$TotalSales), ]
+top_product
+Output
+Product  TotalSales
+Tablet   270000
+
+Step 5: Total Quantity per Category
+quantity_per_category <- aggregate(Quantity ~ Category, data = sales, sum)
+quantity_per_category
+Output
+Category      Quantity
+Electronics   11
+Fashion        9
+Accessories    8
+
+Step 6: Filter High-Value Products
+high_sales <- total_sales_product[total_sales_product$TotalSales > 50000, ]
+high_sales
+Output
+Product   TotalSales
+Tablet    270000
+Camera     90000
+
+Step 7: Export Result
+write.csv(total_sales_product, "product_summary.csv", row.names = FALSE)
