@@ -1,0 +1,79 @@
+Question 1: Student Information System
+roll_no <- 315
+name <- "Divya"
+cgpa <- 9.12
+pass <- FALSE
+roll_no
+name
+cgpa
+pass
+
+Question 2: Employee Salary Record
+emp_id <- 7420
+salary <- 38999.25
+department <- "Marketing"
+is_permanent <- TRUE
+emp_id
+salary
+department
+is_permanent
+
+Question 3: Online Shopping Cart
+product_name <- "Headphones"
+price <- 2499
+stock_available <- 60
+discount_eligible <- FALSE
+product_name
+price
+stock_available
+discount_eligible
+
+Question 4: Weather Monitoring System
+city <- "Hyderabad"
+temperature <- 28.7
+rain <- TRUE
+wind_speed <- 6.3
+city
+temperature
+rain
+wind_speed
+
+Question 5: Examination Result Processing
+subject <- "Chemistry"
+total_marks <- 150
+marks_obtained <- 112
+result <- marks_obtained >= 60
+subject
+total_marks
+marks_obtained
+result
+
+Question 6: Banking Application
+account_no <- 556677889
+holder_name <- "Arjun Mehta"
+balance <- 10500.00
+account_active <- FALSE
+account_no
+holder_name
+balance
+account_active
+
+Question 7: Movie Rating System
+movie_title <- "Avatar"
+rating <- 7.9
+reviews <- 875
+available <- TRUE
+movie_title
+rating
+reviews
+available
+
+Question 8: Traffic Monitoring System
+vehicle_count <- 210
+location <- "Ring Road"
+avg_speed <- 55.2
+congested <- FALSE
+vehicle_count
+location
+avg_speed
+congested
